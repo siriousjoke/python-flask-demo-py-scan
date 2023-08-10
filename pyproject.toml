@@ -16,12 +16,17 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 version = "0.0.1"
+dependencies = [
+"Flask==2.1.1"
+"pytest==7.1.1"
+"pytest-cov==3.0.0"
+]
 
 [sonar]
 projectKey="davidkunzmann_flask-demo"
 organization="davidkunzmann"
 sources="pokedex"
 tests="tests"
-python.version = "3.9"
+python.version = "3.10"
 python.coverage.reportPaths="cov.xml"
 host.url="https://sonarcloud.io"
