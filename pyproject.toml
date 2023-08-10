@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "flask-demo"
+authors = [
+  { name="Guillaume Dequenne", email="guillaume.dequenne@sonarsource.com" }
+]
+description = ""
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+version = "0.0.1"
+
+[sonar]
+projectKey="davidkunzmann_flask-demo"
+organization="davidkunzmann"
+sources="pokedex"
+tests="tests"
+python.version = "3.9"
+python.coverage.reportPaths="cov.xml"
+host.url="https://sonarcloud.io"
